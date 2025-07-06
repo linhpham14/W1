@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!--https://vnexpress.net/labubu-gay-sot-khap-chau-a-4833995.html-->
+<!--
+Q: Adding image using HTML <img> tag & using background-image CSS property. What's the difference?
+A: The <img> tag embeds an image online in the HTML document, while with background-image in CSS the image has to be downloaded to computer and put in the same folder as html&css docs-->
+<html lang="vi">
+<!--lang = language-->    
+    <head>
+        <meta charset="UTF-8">
+        <title>Labubu gây sốt khắp châu Á</title>
+        <!--fonts embed from gg font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Asul:wght@400;700&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+        <!--Style for white box w/ content & imgs inside, idk why it did not work when I typed this in the css page-->
+        <!--CSS is linked in the <head></head> section-->
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>    
+    <body>
+        <header>
+            <h1>VNEXPRESS</h1>
+
+            <h2 class="subtitle">Báo tiếng Việt nhiều người xem nhất</h2>
+
+            <ul class="menu">
+                <li><a href="#">Thời sự</a></li>
+                <li><a href="#">Thế giới</a></li>
+                <li><a href="#">Kinh doanh</a></li>
+                <li><a href="#">Khoa học công nghệ</a></li>
+                <li><a href="#">Video</a></li>
+                <li><a href="#">Podcast</a></li>
+                <li><a href="#">Góc nhìn</a></li>
+                <li><a href="#">Bất động sản</a></li>
+                <li><a href="#">Sức khoẻ</a></li>
+                <li><a href="#">Thể thao</a></li>
+                <li><a href="#">Giải trí</a></li>
+            </ul>
+            
+        </header>
+        <!--section dungf cho chia thành từng phần-->
+        <section class="background">
+            <!--div dùng cho trang chí, bố cục bằng css-->
+            <div class="content-box">
+                
+                <p id="datetime"></p>
+                <!--script=JavaScript, do html chỉ hiển thị nội dung tĩnh, k đổi theo tgian.
+                code JavaScript by Copilot... :-:-->
+                <script>
+                    function formatDateTime() {
+                        const now = new Date();
+                        const options = { year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
+                        return now.toLocaleDateString('vi-VN', options);
+                    }
+                    document.getElementById("datetime").innerHTML = formatDateTime();
+                </script>
+
+                <h1 class="page-title">Labubu gây sốt khắp châu Á</h1>
+
+                <p class="normal-texts">Tại một cửa hàng đồ chơi Pop Mart ở quận Từ Hối, Thượng Hải,
+                một nữ khách hàng hồ hởi khoe vừa mua được búp bê Labubu sau
+                nhiều tháng chờ đợi..</p>
+                <p class="normal-texts">"Tôi chưa từng đặt mua thành công khi hãng thêm sản phẩm 
+                vào website bán hàng trực tuyến do có quá nhiều người truy 
+                cập cùng lúc để mua hàng", cô nói. "Cuối cùng tôi cũng mua 
+                được Labubu tại cửa hàng chính thức hôm nay. Tôi rất vui!".</p>
+                <p class="normal-texts">Khi được hỏi lý do thích món đồ chơi này, cô gái trẻ trả lời: 
+                "Tôi thích thiết kế và cảm thấy vui vẻ khi nhìn thấy nó".</p>
+                <p class="normal-texts">Labubu, búp bê cao su có đôi tai thỏ, đôi mắt tinh quái, nụ cười 
+                rộng với hàm răng cưa đang là sản phẩm đồ chơi gây sốt trên khắp châu 
+                Á nhờ tạo hình độc đáo và sức mạnh thương hiệu.</p>
+                <p class="normal-texts">Labubu được thiết kế bởi nghệ sĩ Kasing Lung, người Hong Kong, và 
+                sản xuất bởi nhà bán lẻ đồ chơi Trung Quốc Pop Mart. Theo báo cáo cuối 
+                tháng 11 của Guosen Securities, Pop Mart đang là doanh nghiệp lớn nhất, 
+                phát triển nhanh nhất trong ngành công nghiệp sản xuất đồ chơi thịnh hành.</p>
+                    <img class="image" src="https://i1-vnexpress.vnecdn.net/2024/12/31/a1419abb-8755-4349-8a28-21ee36-7401-5425-1735616851.jpg?w=680&h=0&q=100&dpr=2&fit=crop&s=m07ZpCsRpop7NpvRGnwqOA">
+                        <footer class="img-description">Búp bê Labubu trưng bày tại một cửa hàng Pop Mart ở Thượng Hải, ngày 17/12. Ảnh: AP</footer>
+                <p class="normal-texts">Nhu cầu về Labubu đã vượt xa nguồn cung ở Trung Quốc và trở thành hiện 
+                tượng tại nhiều khu vực ở châu Á.</p>
+                <p class="normal-texts">Hồi tháng 4, Lisa, thành viên người Thái Lan của nhóm nhạc K-pop nổi 
+                tiếng Blackpink, đăng ảnh ôm một con búp bê Labubu, khoe móc khóa Labubu 
+                lên trang cá nhân. Kể từ đó, Labubu bùng nổ ở Thái Lan, rồi nhanh chóng 
+                lan sang Việt Nam, Singapore và nhiều thị trường khác.</p>
+                <p class="normal-texts">Khi lần đầu nhìn thấy búp bê Labubu, Grace Lee ở Singapore cho rằng 
+                đây là món đồ chơi xấu xí với đôi tai thỏ, hàm răng nhọn.</p>
+                <p class="normal-texts">Nhưng khi đồng nghiệp tặng Lee một con hồi tháng 7, cô bắt đầu nhìn 
+                chúng theo cách khác. "Tôi không biết tại sao nhưng tôi bắt đầu sưu tầm 
+                chúng. Đến nay tôi có khoảng 12 con", Lee, 36 tuổi, nói.</p>
+                <p class="normal-texts">Búp bê Labubu được đóng gói trong hộp kín không nhìn thấy bên trong, 
+                gọi là "hộp mù", để kích thích tính tò mò và phấn khích của người tiêu 
+                dùng. Những con nhỏ, có nhiều tư thế, trang phục khác nhau giá 15-20 USD, 
+                trong khi những con lớn hơn 30 cm có giá đến 85 USD.</p>
+                <p class="normal-texts">Tại Singapore, món đồ chơi này phổ biến đến nỗi luôn bán hết chỉ sau 
+                vài phút được bổ sung hàng. Một nhân viên chi nhánh Pop Mart ở Singapore 
+                cho biết cửa hàng thường bổ sung vài trăm búp bê nhỏ hai lần mỗi tuần, 
+                nhưng không thông báo thời điểm.</p>
+                <p class="normal-texts">Người "săn" theo dõi thông tin trên các hội nhóm mạng xã hội. "Họ sẽ 
+                kéo đến xếp hàng dài bên ngoài cửa hàng trong chưa đầy 30 phút sau khi 
+                có thông tin bổ sung búp bê", Lee nói.</p>
+                    <img class="image" src="https://i1-vnexpress.vnecdn.net/2024/12/31/67341c245ec9bfa3d63db6f9-17356-3940-8676-1735616851.jpg?w=680&h=0&q=100&dpr=2&fit=crop&s=Bh-SHR_Uesw-IWp4Cci4cQ">
+                        <footer class="img-description">Người tiêu dùng xếp hàng "săn" Labubu tại cửa hàng Pop Mart ở Singapore. Ảnh: BI</footer>
+                <p class="normal-texts">Với sản phẩm chủ lực là Labubu, Pop Mart ghi nhận mức tăng trưởng doanh 
+                số 440-445% tại các thị trường quốc tế trong năm qua. Báo cáo kinh doanh quý 
+                III cho thấy tổng doanh thu của Pop Mart tăng 120-125% so với cùng kỳ.</p>
+                <p class="normal-texts">Công ty tư vấn tài chính Huatai Securities nhận định Pop Mart khả năng cao 
+                tiếp tục tăng trưởng trong năm tới, có triển vọng trở thành thương hiệu đồ 
+                chơi hàng đầu thế giới. Trào lưu cũng lan dần sang phương Tây. Pop Mart hiện 
+                có 16 cửa hàng tại Mỹ.</p>
+                <p class="normal-texts">"Labubu hấp dẫn vì nó hợp thời, bạn cũng muốn sở hữu nó khi thấy người khác 
+                sưu tầm", Joey Khong, chuyên gia tại công ty nghiên cứu thị trường Mintel, nhận 
+                định.</p>
+                <p class="normal-texts">Theo mô tả của Pop Mart, búp bê Labubu là đồ chơi dành cho người lớn, "không 
+                phù hợp với người dưới 15 tuổi".</p>
+                <p class="normal-texts">"Món đồ chơi có thể là niềm an ủi với những nhân viên công ty mệt mỏi, mang 
+                lại sự thư giãn trong một thế giới khó đoán", Khong nói.</p>
+                <p class="normal-texts">Juda Kanaprach, đồng sáng lập công ty nghiên cứu thị trường Milieu Insight, 
+                cho hay cơn sốt Labubu đã có tiền đề lâu năm, xuất phát từ văn hóa sưu tầm mô 
+                hình, búp bê đồ chơi ở Nhật Bản, Hàn Quốc, Hong Kong.</p>
+                <p class="normal-texts">"Chúng là sự kết hợp của nghệ thuật, thời trang và văn hóa đại chúng. Đối 
+                với nhiều người trẻ, đây không chỉ là những món đồ chơi mà là những tác phẩm 
+                nghệ thuật thu nhỏ, thêm chút cá tính, phong cách cho không gian, phụ kiện 
+                của họ", bà Kanaprach giải thích.</p>
+                    <img class="image" src="https://i1-vnexpress.vnecdn.net/2024/12/31/67331f17192f52589857c911-17356-4896-6842-1735616852.jpg?w=680&h=0&q=100&dpr=2&fit=crop&s=erN9Dmlg5bdHucEPi4gnzw">
+                        <footer class="img-description">Ana Gonzales ở Philippines khoe búp bê Labubu trong bộ sưu tập. Ảnh: BI</footer>
+                <p class="normal-texts">Ana Gonzales, 38 tuổi ở Philippines, bắt đầu sưu tầm Labubu sau khi bạn bè 
+                đua nhau tìm kiếm loại búp bê này. Đến nay Gonzales đã chi khoảng 500 USD cho bộ sưu tập.</p>
+                <p class="normal-texts">"Sức hấp dẫn thực sự của Labubu nằm ở những chiếc 'hộp mù'. Cảm giác không biết mình sẽ nhận 
+                được phiên bản nào khiến tôi phấn khích. Mở hộp sau một ngày mệt mỏi giống như mở quà vậy", 
+                Gonzales, quản lý truyền thông ở Philippines, nói.</p>
+                <p class="normal-texts">Labubu không phải dòng đồ chơi thịnh hành cho người lớn đầu tiên. Tại thị trường Mỹ, Canada, đồ chơi nhồi bông Squishmallow là sản phẩm bán chạy nhất năm 2022. Thuật ngữ "kidults" ra đời trong bối cảnh này, chỉ những người tiêu dùng trên 12 tuổi tìm đến đồ chơi, thú nhồi bông để xoa dịu cảm giác lo âu, cô đơn.</p>
+                <p class="normal-texts">Đối với Grace Lee, sưu tầm Labubu không chỉ đưa cô về với tuổi thơ, mà còn giúp cô kết nối với cộng đồng mới.</p>
+                <p class="normal-texts">"Chỉ cần treo Labubu trên túi xách là có chủ đề trò chuyện với mọi người. Đó là cảm giác khá ấm áp", Lee nói.</p>
+                
+                <footer>
+                    <p class="footer">Đức Trung (Theo Insider, CNA, Straits Times)</p>
+                </footer>
+                
+                <a href="https://vnexpress.net/labubu-gay-sot-khap-chau-a-4833995.html">Click to see the original site</a>
+            </div>    
+        </section>   
+    </body>
+</html>

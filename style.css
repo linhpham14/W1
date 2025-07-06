@@ -1,0 +1,113 @@
+
+.subtitle {
+  font-size: 10px;
+  color: #666;
+  margin-top: -15px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.background {
+    background-image: url('background.png');
+    background-size: 2000px; /* Adjusts the size of the background image */
+    background-position: top center; /* Aligns image to the top center */
+    padding: 40px;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; /*padding = 0 thì chữ nằm sát viền*/
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+}
+/*.page-title {
+    font-size: 50px;
+    font-family: "Asul", serif;
+    color: #000000;
+
+    /*-webkit-text-stroke: 10% rgb(57, 0, 0);
+    text-shadow:
+    -1px -1px 0 #460000,
+     1px -1px 0 #460000,
+    -1px  1px 0 #460000,
+     1px  1px 0 #460000;
+}*/
+.asul-bold {
+  font-family: "Asul", serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 33px;
+}
+.asul-regular {
+  font-family: "Asul", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.normal-texts {
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    font-weight: 400;
+    line-height: 29px;
+    color: #000000;
+    margin: 10px;
+}
+.footer {
+    text-align: right;
+    font-size: 12px;
+}
+.image {
+    margin: 0 auto;
+    max-width: 1000px;
+    align-items: center;
+}
+/*.white-bg {
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 132px; /* Xích xuống dưới 
+}*/
+/*.content-box {
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 132px; /* Xích xuống dưới 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden; /* Prevent content from spilling out 
+}
+.content-box img {
+    display: block;
+    margin: 20 auto;
+    max-width: 100%; /* Ensures the image is responsive 
+    height: auto; /* Maintains aspect ratio 
+}
+.content-box h1, .content-box p {
+    margin: 10px 0;
+    color: #333;
+    text-align: justify;
+}*/
+.img-description {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #666;
+    font-weight: 400;
+    line-height: 22px;
+    font-style: normal;
+    text-align: center;
+}
+.content-box {
+    background-color: white;
+    padding: 20px;
+    margin: 130px auto;
+    width: 90%;
+    max-width: 1000px;
+            }
+.content-box img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.content-box h1, .content-box p {
+    margin: 10px 0;
+            }
